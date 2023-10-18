@@ -2,11 +2,15 @@
   canopenlib_hw_peak.cpp
 C:\dev\G_Equipment_CheckPoint\datalinkengineeringcanopen\canopen_stack_visual_studio_2022\visual_studio\plug_in_peak\canopenlib_hw_peak.cpp(203,9): warning C4101: 'res' : variable locale non référencée
      Création de la bibliothèque ..\bin\Release\canopenlib64_hw.lib et de l'objet ..\bin\Release\canopenlib64_hw.exp
-  Previous IPDB not found, fall back to full compilation.
+  0 of 13 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
 canopenlib64_hw.exp : warning LNK4070: la directive /OUT:canopenlib_hw32.dll dans .EXP est différente du nom du fichier de sortie '..\bin\Release\canopenlib64_hw.dll' ; directive ignorée
   Génération de code en cours
-  All 13 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Fin de la génération du code
 canopenlib64_hw.exp : warning LNK4070: la directive /OUT:canopenlib_hw32.dll dans .EXP est différente du nom du fichier de sortie '..\bin\Release\canopenlib64_hw.dll' ; directive ignorée
   canopenlib64_hw_peak_VS2012.vcxproj -> C:\dev\G_Equipment_CheckPoint\datalinkengineeringcanopen\canopen_stack_visual_studio_2022\visual_studio\bin\Release\canopenlib64_hw.dll
-          1 fichier(s) copié(s).
+  Le chemin d'accès spécifié est introuvable.
+          0 fichier(s) copié(s).
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(161,5): error MSB3073: La commande "copy ..\bin\Release\canopenlib64_hw.dll ..\bin\Release\zip\dlls\Kvaser\canopenlib64_hw.dll
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(161,5): error MSB3073: :VCEnd" s'est arrêtée avec le code 1.
