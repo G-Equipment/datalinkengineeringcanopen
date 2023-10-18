@@ -47,7 +47,7 @@
 #pragma managed(pop)
 #endif
 
-#define USE_PCAN_PCI        FALSE   // {TRUE, FALSE} Default is PCAN-USB (FALSE)
+#define USE_PCAN_PCI        TRUE   // {TRUE, FALSE} Default is PCAN-USB (FALSE)
 #define MAX_CAN_DEVICES     2
 #define RX_QUEUE_SIZE       100
 
@@ -235,6 +235,10 @@ CANOPENLIB_HW_API   canOpenStatus    __stdcall canPortBitrateSet( canPortHandle 
       can_port_data_devices[handle].bitrate = PCAN_BAUD_500K;
       canopen_res = CANOPEN_OK;
       break;
+    case 800000:
+        can_port_data_devices[handle].bitrate = PCAN_BAUD_800K;
+        canopen_res = CANOPEN_OK;
+        break;
     case 1000000:
       can_port_data_devices[handle].bitrate = PCAN_BAUD_1M;
       canopen_res = CANOPEN_OK;

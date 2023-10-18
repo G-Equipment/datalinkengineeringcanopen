@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "canopenlib64.dll", "..\..\visual_studio\canopenlib32_dll\canopen_stack_VS2012_x64.vcxproj", "{9EDCD498-21A1-4960-AE0E-C2E445DDC395}"
 	ProjectSection(ProjectDependencies) = postProject
 		{87506536-AB5E-4D66-8288-2961FCECF3B8} = {87506536-AB5E-4D66-8288-2961FCECF3B8}
@@ -158,7 +160,6 @@ Global
 		{87506536-AB5E-4D66-8288-2961FCECF3B8}.Release (PEAK PCANBasic)|Mixed Platforms.ActiveCfg = Release|x64
 		{87506536-AB5E-4D66-8288-2961FCECF3B8}.Release (PEAK PCANBasic)|Win32.ActiveCfg = Release|x64
 		{87506536-AB5E-4D66-8288-2961FCECF3B8}.Release (PEAK PCANBasic)|x64.ActiveCfg = Release|x64
-		{87506536-AB5E-4D66-8288-2961FCECF3B8}.Release (PEAK PCANBasic)|x64.Build.0 = Release|x64
 		{87506536-AB5E-4D66-8288-2961FCECF3B8}.Release (PEAK PCANBasic)|x86.ActiveCfg = Release|x64
 		{FF417857-733A-49CD-84F8-8A7568897CDC}.Debug (IXXAT)|Mixed Platforms.ActiveCfg = Debug|x64
 		{FF417857-733A-49CD-84F8-8A7568897CDC}.Debug (IXXAT)|Mixed Platforms.Build.0 = Debug|x64
@@ -239,7 +240,6 @@ Global
 		{275CE4F0-21BE-4D5C-BC6D-7C1412258B25}.Release (PEAK PCANBasic)|Win32.ActiveCfg = Release|x86
 		{275CE4F0-21BE-4D5C-BC6D-7C1412258B25}.Release (PEAK PCANBasic)|Win32.Build.0 = Release|x86
 		{275CE4F0-21BE-4D5C-BC6D-7C1412258B25}.Release (PEAK PCANBasic)|x64.ActiveCfg = Release|x64
-		{275CE4F0-21BE-4D5C-BC6D-7C1412258B25}.Release (PEAK PCANBasic)|x64.Build.0 = Release|x64
 		{275CE4F0-21BE-4D5C-BC6D-7C1412258B25}.Release (PEAK PCANBasic)|x86.ActiveCfg = Release|x86
 		{275CE4F0-21BE-4D5C-BC6D-7C1412258B25}.Release (PEAK PCANBasic)|x86.Build.0 = Release|x86
 		{A1A98567-6FD8-4AE2-AEF1-84B4AEA49A89}.Debug (IXXAT)|Mixed Platforms.ActiveCfg = Debug|x86
@@ -343,7 +343,6 @@ Global
 		{95BAA5BA-4E99-41EB-8206-707420AE192B}.Release (PEAK PCANBasic)|Mixed Platforms.ActiveCfg = Release|x64
 		{95BAA5BA-4E99-41EB-8206-707420AE192B}.Release (PEAK PCANBasic)|Win32.ActiveCfg = Release|x64
 		{95BAA5BA-4E99-41EB-8206-707420AE192B}.Release (PEAK PCANBasic)|x64.ActiveCfg = Release|x64
-		{95BAA5BA-4E99-41EB-8206-707420AE192B}.Release (PEAK PCANBasic)|x64.Build.0 = Release|x64
 		{95BAA5BA-4E99-41EB-8206-707420AE192B}.Release (PEAK PCANBasic)|x86.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution

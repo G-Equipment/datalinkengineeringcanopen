@@ -1,0 +1,79 @@
+﻿  CanConnectionClass.cpp
+  CanInterfaceClass.cpp
+  CanMonitorClass.cpp
+  CANopenLibHelper.cpp
+  ClientSDOClass.cpp
+  DCFFileClass.cpp
+C:\dev\G_Equipment_CheckPoint\datalinkengineeringcanopen\canopen_stack_visual_studio_2022\visual_studio\canopenlib32_dll\src\DCFFileClass.cpp(90,26): warning C4267: 'initialisation' : conversion de 'size_t' en 'int', perte possible de données
+C:\dev\G_Equipment_CheckPoint\datalinkengineeringcanopen\canopen_stack_visual_studio_2022\visual_studio\canopenlib32_dll\src\DCFFileClass.cpp(173,10): warning C4101: 'defaultValue' : variable locale non référencée
+  EmcyClientClass.cpp
+  EmcyServerClass.cpp
+  LSSMasterClass.cpp
+  LSSSlaveClass.cpp
+  NMTMasterClass.cpp
+  NMTSlaveClass.cpp
+  PeriodicTransmitterClass.cpp
+  ReceivePDOClass.cpp
+  SDOClass.cpp
+  ServerSDOClass.cpp
+  SyncProducerClass.cpp
+  SyncServerClass.cpp
+  TimerClass.cpp
+  TransmitPdoClass.cpp
+  Génération de code en cours...
+  Microsoft (R) Incremental Linker Version 14.37.32825.0
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  "/OUT:..\bin\Release\canopenlib64.dll" /INCREMENTAL:NO "/LIBPATH:C:\dev\vcpkg\installed\x64-windows\lib" "/LIBPATH:C:\dev\vcpkg\installed\x64-windows\lib\manual-link" .\lib\2010\can_dispatcher_x64.lib libcmt.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\dev\vcpkg\installed\x64-windows\lib\*.lib" /MANIFEST "/MANIFESTUAC:level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FULL "/PDB:..\bin\Release\canopenlib64.pdb" /TLBID:1 /DYNAMICBASE:NO "/IMPLIB:..\bin\Release\canopenlib64.lib" /MACHINE:X64 /DLL ..\bin\Release\canopen_resource.res 
+  .\Release/CanConnectionClass.obj 
+  .\Release/CanInterfaceClass.obj 
+  .\Release/CanMonitorClass.obj 
+  .\Release/CANopenLibHelper.obj 
+  .\Release/ClientSDOClass.obj 
+  .\Release/DCFFileClass.obj 
+  .\Release/EmcyClientClass.obj 
+  .\Release/EmcyServerClass.obj 
+  .\Release/LSSMasterClass.obj 
+  .\Release/LSSSlaveClass.obj 
+  .\Release/NMTMasterClass.obj 
+  .\Release/NMTSlaveClass.obj 
+  .\Release/PeriodicTransmitterClass.obj 
+  .\Release/ReceivePDOClass.obj 
+  .\Release/SDOClass.obj 
+  .\Release/ServerSDOClass.obj 
+  .\Release/SyncProducerClass.obj 
+  .\Release/SyncServerClass.obj 
+  .\Release/TimerClass.obj 
+  .\Release/TransmitPdoClass.obj 
+  can_dispatcher_x64.lib(CANopenDispatcher.obj) : .netmodule ou module MSIL compilé avec /GL trouvé ; redémarrage de l'édition de liens avec /LTCG ; ajoutez /LTCG à la ligne de commande de l'édition de liens pour améliorer les performances de l'Éditeur de liens
+  Microsoft (R) Incremental Linker Version 14.37.32825.0
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  "/OUT:..\bin\Release\canopenlib64.dll" /INCREMENTAL:NO "/LIBPATH:C:\dev\vcpkg\installed\x64-windows\lib" "/LIBPATH:C:\dev\vcpkg\installed\x64-windows\lib\manual-link" .\lib\2010\can_dispatcher_x64.lib libcmt.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\dev\vcpkg\installed\x64-windows\lib\*.lib" /MANIFEST "/MANIFESTUAC:level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FULL "/PDB:..\bin\Release\canopenlib64.pdb" /TLBID:1 /DYNAMICBASE:NO "/IMPLIB:..\bin\Release\canopenlib64.lib" /MACHINE:X64 /DLL ..\bin\Release\canopen_resource.res 
+  .\Release/CanConnectionClass.obj 
+  .\Release/CanInterfaceClass.obj 
+  .\Release/CanMonitorClass.obj 
+  .\Release/CANopenLibHelper.obj 
+  .\Release/ClientSDOClass.obj 
+  .\Release/DCFFileClass.obj 
+  .\Release/EmcyClientClass.obj 
+  .\Release/EmcyServerClass.obj 
+  .\Release/LSSMasterClass.obj 
+  .\Release/LSSSlaveClass.obj 
+  .\Release/NMTMasterClass.obj 
+  .\Release/NMTSlaveClass.obj 
+  .\Release/PeriodicTransmitterClass.obj 
+  .\Release/ReceivePDOClass.obj 
+  .\Release/SDOClass.obj 
+  .\Release/ServerSDOClass.obj 
+  .\Release/SyncProducerClass.obj 
+  .\Release/SyncServerClass.obj 
+  .\Release/TimerClass.obj 
+  .\Release/TransmitPdoClass.obj 
+     Création de la bibliothèque ..\bin\Release\canopenlib64.lib et de l'objet ..\bin\Release\canopenlib64.exp
+  Génération de code en cours
+  Fin de la génération du code
+can_dispatcher_x64.lib(CANopenDispatcher.obj) : warning LNK4099: PDB '' n'a pu être trouvé avec 'can_dispatcher_x64.lib(CANopenDispatcher.obj)' ou sur '' ; l'objet sera lié sans informations de débogage
+can_dispatcher_x64.lib(SHA1.obj) : warning LNK4099: PDB '' n'a pu être trouvé avec 'can_dispatcher_x64.lib(SHA1.obj)' ou sur '' ; l'objet sera lié sans informations de débogage
+can_dispatcher_x64.lib(HMAC_SHA1.obj) : warning LNK4099: PDB '' n'a pu être trouvé avec 'can_dispatcher_x64.lib(HMAC_SHA1.obj)' ou sur '' ; l'objet sera lié sans informations de débogage
+  canopen_stack_VS2012_x64.vcxproj -> C:\dev\G_Equipment_CheckPoint\datalinkengineeringcanopen\canopen_stack_visual_studio_2022\visual_studio\bin\Release\canopenlib64.dll
+          1 fichier(s) copié(s).

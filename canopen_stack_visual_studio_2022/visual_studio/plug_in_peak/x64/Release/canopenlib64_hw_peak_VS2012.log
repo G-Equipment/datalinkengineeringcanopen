@@ -1,0 +1,12 @@
+﻿          1 fichier(s) copié(s).
+  canopenlib_hw_peak.cpp
+C:\dev\G_Equipment_CheckPoint\datalinkengineeringcanopen\canopen_stack_visual_studio_2022\visual_studio\plug_in_peak\canopenlib_hw_peak.cpp(203,9): warning C4101: 'res' : variable locale non référencée
+     Création de la bibliothèque ..\bin\Release\canopenlib64_hw.lib et de l'objet ..\bin\Release\canopenlib64_hw.exp
+  Previous IPDB not found, fall back to full compilation.
+canopenlib64_hw.exp : warning LNK4070: la directive /OUT:canopenlib_hw32.dll dans .EXP est différente du nom du fichier de sortie '..\bin\Release\canopenlib64_hw.dll' ; directive ignorée
+  Génération de code en cours
+  All 13 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Fin de la génération du code
+canopenlib64_hw.exp : warning LNK4070: la directive /OUT:canopenlib_hw32.dll dans .EXP est différente du nom du fichier de sortie '..\bin\Release\canopenlib64_hw.dll' ; directive ignorée
+  canopenlib64_hw_peak_VS2012.vcxproj -> C:\dev\G_Equipment_CheckPoint\datalinkengineeringcanopen\canopen_stack_visual_studio_2022\visual_studio\bin\Release\canopenlib64_hw.dll
+          1 fichier(s) copié(s).

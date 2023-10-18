@@ -1,0 +1,338 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly canopenlib64_NET, Version=1.0.*, Culture=Langue indifférente (Pays indifférent): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class DatalinkEngineering.CANopen.OBJECT_ATTRIBUTES_NET: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt16 OBJECT_READABLE IsConst : Public, Static, HasDefault
+    UInt16 OBJECT_WRITEABLE IsConst : Public, Static, HasDefault
+    UInt16 OBJECT_MAPPABLE IsConst : Public, Static, HasDefault
+Class DatalinkEngineering.CANopen.CanMessageTypes: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32 CAN_MSG_RTR_FLAG IsConst : Public, Static, HasDefault
+    UInt32 CAN_MSG_EXT_FLAG IsConst : Public, Static, HasDefault
+Class DatalinkEngineering.CANopen.SrvReadDelegate: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, UInt16, Byte, Byte[], UInt32&(Out), UInt32&(Out)): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Object, UInt16, Byte, Byte[], UInt32&(Out), UInt32&(Out), AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(UInt32&, UInt32&, IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class DatalinkEngineering.CANopen.SrvWriteDelegate: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, UInt16, Byte, Byte[], UInt32, UInt32&(Out)): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Object, UInt16, Byte, Byte[], UInt32, UInt32&(Out), AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(UInt32&, IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class DatalinkEngineering.CANopen.SrvGetAttrDelegate: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, UInt16, Byte, UInt16&(Out)): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Object, UInt16, Byte, UInt16&(Out), AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(UInt16&, IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class DatalinkEngineering.CANopen.CliReadResultDelegate: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, CanOpenStatus, Byte, UInt16, Byte, Byte[], UInt32, UInt32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Object, CanOpenStatus, Byte, UInt16, Byte, Byte[], UInt32, UInt32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class DatalinkEngineering.CANopen.CliWriteResultDelegate: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, CanOpenStatus, Byte, UInt16, Byte, UInt32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Object, CanOpenStatus, Byte, UInt16, Byte, UInt32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class DatalinkEngineering.CANopen.ServerSDO_NET: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    canHardwareConnect(Int32, Int32): PrivateScope, Public, HideBySig
+    canHardwareDisconnect(): PrivateScope, Public, HideBySig
+    canDispatcherPerformance(Int32, Int32): PrivateScope, Public, HideBySig
+    nodeSetId(Byte): PrivateScope, Public, HideBySig
+    registerObjectReadCallback(SrvReadDelegate, Object): PrivateScope, Public, HideBySig
+    registerObjectWriteCallback(SrvWriteDelegate, Object): PrivateScope, Public, HideBySig
+    registerObjectGetAttributesCallback(SrvGetAttrDelegate, Object): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DatalinkEngineering.CANopen.CanReceiveDelegate: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, UInt32, Byte[], Byte, UInt32): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Object, UInt32, Byte[], Byte, UInt32, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class DatalinkEngineering.CANopen.ReceivePdoDelegate: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, UInt32, Byte[], Byte): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Object, UInt32, Byte[], Byte, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class DatalinkEngineering.CANopen.EmcyServerDelegate: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, Byte, UInt16, Byte, Byte[]): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Object, Byte, UInt16, Byte, Byte[], AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class DatalinkEngineering.CANopen.SyncServerDelegate: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Object, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class DatalinkEngineering.CANopen.CanMonitor_NET: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    canHardwareConnect(Int32, Int32): PrivateScope, Public, HideBySig
+    canHardwareDisconnect(): PrivateScope, Public, HideBySig
+    canDispatcherPerformance(Int32, Int32): PrivateScope, Public, HideBySig
+    registerCanReceiveCallback(Object, CanReceiveDelegate): PrivateScope, Public, HideBySig
+    canWrite(UInt32, Byte[], Byte, UInt32): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DatalinkEngineering.CANopen.ReceivePDO_NET: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    canHardwareConnect(Int32, Int32): PrivateScope, Public, HideBySig
+    canHardwareDisconnect(): PrivateScope, Public, HideBySig
+    canDispatcherPerformance(Int32, Int32): PrivateScope, Public, HideBySig
+    registerReceivePdoMessageCallBack(Object, ReceivePdoDelegate): PrivateScope, Public, HideBySig
+    setCobid(UInt32): PrivateScope, Public, HideBySig
+    requestPDO(Byte): PrivateScope, Public, HideBySig
+    readPdoData(Byte&(Out), Byte): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DatalinkEngineering.CANopen.SyncServer_NET: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    canHardwareConnect(Int32, Int32): PrivateScope, Public, HideBySig
+    canHardwareDisconnect(): PrivateScope, Public, HideBySig
+    canDispatcherPerformance(Int32, Int32): PrivateScope, Public, HideBySig
+    registerSyncMessageCallBack(Object, SyncServerDelegate): PrivateScope, Public, HideBySig
+    setCobid(UInt32): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DatalinkEngineering.CANopen.EmcyServer_NET: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    canHardwareConnect(Int32, Int32): PrivateScope, Public, HideBySig
+    canHardwareDisconnect(): PrivateScope, Public, HideBySig
+    canDispatcherPerformance(Int32, Int32): PrivateScope, Public, HideBySig
+    registerEmcyServerMessageCallBack(Object, EmcyServerDelegate): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DatalinkEngineering.CANopen.TransmitPDO_NET: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    canHardwareConnect(Int32, Int32): PrivateScope, Public, HideBySig
+    canHardwareDisconnect(): PrivateScope, Public, HideBySig
+    canDispatcherPerformance(Int32, Int32): PrivateScope, Public, HideBySig
+    setup(UInt32, Byte[], Byte): PrivateScope, Public, HideBySig
+    transmit(): PrivateScope, Public, HideBySig
+    periodicTransmission(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DatalinkEngineering.CANopen.SyncProducer_NET: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    canHardwareConnect(Int32, Int32): PrivateScope, Public, HideBySig
+    canHardwareDisconnect(): PrivateScope, Public, HideBySig
+    canDispatcherPerformance(Int32, Int32): PrivateScope, Public, HideBySig
+    setSyncCOBID(UInt32): PrivateScope, Public, HideBySig
+    setTransmissionPeriodTime(UInt32 IsLong): PrivateScope, Public, HideBySig
+    startPeriodicTransmission(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DatalinkEngineering.CANopen.EmcyClient_NET: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    canHardwareConnect(Int32, Int32): PrivateScope, Public, HideBySig
+    canHardwareDisconnect(): PrivateScope, Public, HideBySig
+    canDispatcherPerformance(Int32, Int32): PrivateScope, Public, HideBySig
+    nodeSetId(Byte): PrivateScope, Public, HideBySig
+    sendEmcyMessage(UInt16, Byte, Byte[]): PrivateScope, Public, HideBySig
+    sendEmcyMessage(Byte, UInt16, Byte, Byte[]): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DatalinkEngineering.CANopen.ClientSDO_NET: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    connect(UInt32, UInt32): PrivateScope, Public, HideBySig
+    connect(Byte): PrivateScope, Public, HideBySig
+    canHardwareConnect(Int32, Int32): PrivateScope, Public, HideBySig
+    canHardwareDisconnect(): PrivateScope, Public, HideBySig
+    canDispatcherPerformance(Int32, Int32): PrivateScope, Public, HideBySig
+    registerObjectReadResultCallback(CliReadResultDelegate, Object): PrivateScope, Public, HideBySig
+    registerObjectWriteResultCallback(CliWriteResultDelegate, Object): PrivateScope, Public, HideBySig
+    unregisterObjectReadWriteResultCallbacks(): PrivateScope, Public, HideBySig
+    sendConfigurationData(String, UInt16&(Out), Byte&(Out), UInt32&(Out)): PrivateScope, Public, HideBySig
+    setWriteObjectTimeout(UInt32): PrivateScope, Public, HideBySig
+    setReadObjectTimeout(UInt32): PrivateScope, Public, HideBySig
+    setNodeResponseTimeout(UInt32): PrivateScope, Public, HideBySig
+    isObjectWriteResultCallbackEnabled(): PrivateScope, Public, HideBySig
+    isObjectReadResultCallbackEnabled(): PrivateScope, Public, HideBySig
+    objectRead(UInt16, Byte, UInt32&(Out), UInt32&(Out)): PrivateScope, Public, HideBySig
+    objectRead(UInt16, Byte, UInt16&(Out), UInt32&(Out)): PrivateScope, Public, HideBySig
+    objectRead(UInt16, Byte, Byte&(Out), UInt32&(Out)): PrivateScope, Public, HideBySig
+    objectRead(UInt16, Byte, Byte[], UInt32&(Out), UInt32&(Out)): PrivateScope, Public, HideBySig
+    objectWrite(UInt16, Byte, UInt32, UInt32&(Out)): PrivateScope, Public, HideBySig
+    objectWrite(UInt16, Byte, UInt16, UInt32&(Out)): PrivateScope, Public, HideBySig
+    objectWrite(UInt16, Byte, Byte, UInt32&(Out)): PrivateScope, Public, HideBySig
+    objectWrite(UInt16, Byte, Byte[], UInt32, UInt32&(Out)): PrivateScope, Public, HideBySig
+    objectWriteBlock(UInt16, Byte, UInt16, Byte[], UInt32, UInt32&(Out)): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DatalinkEngineering.CANopen.NMTOperationalStateDelegate: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, Byte, Byte): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Object, Byte, Byte, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class DatalinkEngineering.CANopen.NMT_Master_NET: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    canHardwareConnect(Int32, Int32): PrivateScope, Public, HideBySig
+    canHardwareDisconnect(): PrivateScope, Public, HideBySig
+    canDispatcherPerformance(Int32, Int32): PrivateScope, Public, HideBySig
+    nodeStart(Byte): PrivateScope, Public, HideBySig
+    nodeStop(Byte): PrivateScope, Public, HideBySig
+    nodePreoperational(Byte): PrivateScope, Public, HideBySig
+    nodeReset(Byte): PrivateScope, Public, HideBySig
+    nodeResetCommunication(Byte): PrivateScope, Public, HideBySig
+    nodeGuardPollStart(Byte, UInt32): PrivateScope, Public, HideBySig
+    nodeGuardPollStop(Byte): PrivateScope, Public, HideBySig
+    heartbeatMonitorStart(Byte, UInt32): PrivateScope, Public, HideBySig
+    heartbeatMonitorStop(Byte): PrivateScope, Public, HideBySig
+    registerNodeStateCallback(NMTOperationalStateDelegate, Object): PrivateScope, Public, HideBySig
+    nodeReadOperationalState(Byte, UInt32, Byte&(Out)): PrivateScope, Public, HideBySig
+    NMTOperationalStateWrapperCPP(Void*, Byte, Byte): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DatalinkEngineering.CANopen.NMTLocalNodeOperationalStateDelegate: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, Byte): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Object, Byte, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class DatalinkEngineering.CANopen.NMT_Slave_NET: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    canHardwareConnect(Int32, Int32): PrivateScope, Public, HideBySig
+    canHardwareDisconnect(): PrivateScope, Public, HideBySig
+    canDispatcherPerformance(Int32, Int32): PrivateScope, Public, HideBySig
+    nodeSetId(Byte): PrivateScope, Public, HideBySig
+    nodeSetState(Byte): PrivateScope, Public, HideBySig
+    writeMessage(UInt32, Byte[], Byte, UInt32): PrivateScope, Public, HideBySig
+    registerLocalNodeStateChangeCallback(NMTLocalNodeOperationalStateDelegate, Object): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DatalinkEngineering.CANopen.LSS_Master_NET: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    canHardwareConnect(Int32, Int32): PrivateScope, Public, HideBySig
+    canHardwareDisconnect(): PrivateScope, Public, HideBySig
+    canDispatcherPerformance(Int32, Int32): PrivateScope, Public, HideBySig
+    switchModeGlobal(Byte): PrivateScope, Public, HideBySig
+    switchModeSelectiveVendorId(UInt32): PrivateScope, Public, HideBySig
+    switchModeSelectiveProductCode(UInt32): PrivateScope, Public, HideBySig
+    switchModeSelectiveRevisionNumber(UInt32): PrivateScope, Public, HideBySig
+    switchModeSelectiveSerialNumber(UInt32): PrivateScope, Public, HideBySig
+    configureNodeId(Byte, Byte&(Out), Byte&(Out)): PrivateScope, Public, HideBySig
+    configureBitTimingParamteres(Byte, Byte, Byte&(Out), Byte&(Out)): PrivateScope, Public, HideBySig
+    activateBitTimingParameters(UInt16): PrivateScope, Public, HideBySig
+    storeConfiguration(Byte&(Out), Byte&(Out)): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DatalinkEngineering.CANopen.LSS_Slave_NET: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    canHardwareConnect(Int32, Int32): PrivateScope, Public, HideBySig
+    canHardwareDisconnect(): PrivateScope, Public, HideBySig
+    canDispatcherPerformance(Int32, Int32): PrivateScope, Public, HideBySig
+    setDeviceParameters(UInt32, UInt32, UInt32, UInt32): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class DatalinkEngineering.CANopen.CANopenLibraryConfiguration: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    SetAdapter(CanAdapter): PrivateScope, Public, Static, HideBySig
+Struct DatalinkEngineering.CANopen.CANopenLibraryConfiguration+CanAdapter: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    CanAdapter canAdapter_DEFAULT = 0 : Public, Static, Literal, HasDefault
+    CanAdapter canAdapter_EMS = 1 : Public, Static, Literal, HasDefault
+    CanAdapter canAdapter_IXXAT = 2 : Public, Static, Literal, HasDefault
+    CanAdapter canAdapter_KVASER = 3 : Public, Static, Literal, HasDefault
+    CanAdapter canAdapter_CAN232 = 4 : Public, Static, Literal, HasDefault
+    CanAdapter canAdapter_CANUSB = 5 : Public, Static, Literal, HasDefault
+    CanAdapter canAdapter_CASTOR = 6 : Public, Static, Literal, HasDefault
+    CanAdapter canAdapter_PCAN = 7 : Public, Static, Literal, HasDefault
+    CanAdapter canAdapter_TINYCAN = 8 : Public, Static, Literal, HasDefault
+    CanAdapter canAdapter_ZANTHIC = 9 : Public, Static, Literal, HasDefault
+Struct DatalinkEngineering.CANopen.CanOpenStatus: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_OK = 0 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_ARG_ERROR = -1 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_UNEXPECTED_SCS = -2 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_UNEXPECTED_CCS = -3 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_TIMEOUT = -4 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_MSG_NOT_PROCESSED = -5 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_TOGGLE = -6 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_BUFFER_TOO_SMALL = -7 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_OBJECT_MISSMATCH = -8 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_APP_BUF_OUT_OF_RANGE = -9 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_REMOTE_NODE_ABORT = -10 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_OUT_OF_MEM = -11 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_ERR_DEFINED_BY_APPL = -12 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_CMD_SPEC_UNKNOWN_OR_INVALLD = -13 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_INTERNAL_STATE_ERROR = -14 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_NODE_ID_OUT_OF_RANGE = -15 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_CAN_LAYER_FAILED = -100 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_ERROR_CAN_LAYER = -101 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_ERROR_CAN_LAYER_OVRFLOW = -102 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_ERROR_HW_CONNECTED = -103 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_ERROR_HW_NOT_CONNECTED = -104 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_ERROR_HW_UNDEFINED = -105 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_ERROR_DRIVER = -106 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_OUT_OF_CAN_INTERFACES = -107 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_UNSUPPORTED_BITRATE = -108 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_ERROR_NO_MESSAGE = -109 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_ERROR_NOT_IMPLEMENTED = -110 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_ERROR_FILE_NOT_FOUND = -111 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_ERROR_NOT_EDS_DCF_CONFIGURED = -112 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_ASYNC_TRANSFER = -113 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_ERROR_ASYNC_TRANSFER_ENABLED = -114 : Public, Static, Literal, HasDefault
+    DatalinkEngineering.CANopen.CanOpenStatus CANOPEN_ERROR = -255 : Public, Static, Literal, HasDefault
