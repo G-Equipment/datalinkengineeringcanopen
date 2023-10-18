@@ -3,3 +3,5 @@ CANopen SDK (API) for Windows developers. Supported adapters: Kvaser, Ixxat, CAN
 See Youtube turtorial for more information:
 
 https://www.youtube.com/channel/UC4UU3Yp9T2r1AMsZJywqCdQ
+
+Forked by G-Equipment
