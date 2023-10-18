@@ -20,3 +20,5 @@ Forked by G-Equipment
             break;
         ```        
 * Modification in the CANopen_CPP_and_NET _only_64_bit_special_case_applications.sln for Release x64 CANOpen configuration
+
+Branch master
