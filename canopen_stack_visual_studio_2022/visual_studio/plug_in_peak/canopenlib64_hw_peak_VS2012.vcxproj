@@ -112,7 +112,8 @@
       </DataExecutionPrevention>
     </Link>
     <PostBuildEvent>
-      <Command>copy ..\bin\Release\canopenlib64_hw.dll ..\bin\Release\zip\dlls\Kvaser\canopenlib64_hw.dll</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
     <PreBuildEvent>
       <Command>copy lib\x64\PCANBasic.dll ..\bin\Release</Command>

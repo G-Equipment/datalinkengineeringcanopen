@@ -222,6 +222,7 @@
             "125000",
             "250000",
             "500000",
+            "800000",
             "1000000"});
             this.comboBitrateCAN.Location = new System.Drawing.Point(61, 47);
             this.comboBitrateCAN.Name = "comboBitrateCAN";
